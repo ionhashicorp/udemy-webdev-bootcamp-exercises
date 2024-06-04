@@ -75,7 +75,7 @@ alert('Hello');
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1 id="title">Hello</h1>
     <input type="checkbox" />
     <button style=":active color:red;">Click Me</button>
     <ul>
@@ -105,4 +105,35 @@ document.querySelector('input').click();
 
 // Select third element of the list and change its text to iooon
 document.querySelectorAll('li')[2].innerText = 'iooon';
+```
+
+# 116
+
+```js
+// Select elements by TAG getElementsByTagName (plural)
+document.getElementsByTagName('li');
+
+// Select third eleemnt of the list and change color to blue
+document.getElementsByTagName('li')[2].style.color = 'blue';
+
+// Select an elements by targeting the class name - bellow returns all list items
+document.getElementsByClassName('list');
+
+// Target element ID (one only) - returns h1 - and replace it to its text
+document.getElementById('title').innerHTML = 'Good Bye';
+
+// Target a class of an element -> returns only one element
+document.querySelector('.btn');
+
+// Target an ID only
+document.querySelector('#title');
+
+// Combine selectors - return the anchor that has as ancestor the li element
+document.querySelector('li a');
+
+// Return the list item that also has as attribute class .item
+document.querySelector('li.list');
+
+// Make the anchor tag red
+document.querySelector('ul li a').style = 'red';
 ```
