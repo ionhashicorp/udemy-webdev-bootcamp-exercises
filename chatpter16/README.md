@@ -135,5 +135,18 @@ document.querySelector('li a');
 document.querySelector('li.list');
 
 // Make the anchor tag red
-document.querySelector('ul li a').style = 'red';
+document.querySelector('ul li a').style.color = 'red';
+```
+
+# 118
+
+```js
+// Make font size 10rem for h1
+document.querySelector('h1').style.fontSize = '10rem';
+
+// hide h1 element
+document.querySelector('h1').style.visibility = 'hidden';
+
+// set background color of button to yellow
+document.querySelector('button').style.backgroundColor = 'yellow';
 ```
