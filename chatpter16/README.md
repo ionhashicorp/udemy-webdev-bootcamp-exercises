@@ -191,3 +191,15 @@ document.querySelector('h1').innerHTML = '<em>BYE</em>';
 // return ALL text within the unordered list
 document.querySelector('ul').innerText;
 ```
+
+# 121
+
+- get an attribute or all attributes of an HTML element
+
+```js
+// retrieve ALL attributes of the <a> anchor tag
+document.querySelector('a').attributes;
+
+// retrieve one specific attribute from the <a> anchor tag
+document.querySelector('a').getAttribute('href');
+```
