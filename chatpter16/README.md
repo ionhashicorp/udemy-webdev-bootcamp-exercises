@@ -59,3 +59,50 @@
 // app.js
 alert('Hello');
 ```
+
+# 115
+
+## Add javascript to websites
+
+- using DOM target this HTML elements
+
+```html
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Hello</h1>
+    <input type="checkbox" />
+    <button style=":active color:red;">Click Me</button>
+    <ul>
+      <li class="list">
+        <a href="https://www.google.com">Google</a>
+      </li>
+      <li class="list">Second</li>
+      <li class="list">Third</li>
+    </ul>
+  </body>
+</html>
+```
+
+```js
+// results in <h1>Hello</h1>
+document.firstElementChild.lastElementChild.firstElementChild;
+
+// Change h1 element into Good Bye
+document.firstElementChild.lastElementChild.firstElementChild.innerHTML =
+  'Good Bye';
+
+// DOM target h1 using querySelector
+document.querySelector('h1');
+
+// DOM simulate a mouse click
+document.querySelector('input').click();
+
+// Select third element of the list and change its text to iooon
+document.querySelectorAll('li')[2].innerText = 'iooon';
+```
