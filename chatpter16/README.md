@@ -150,3 +150,29 @@ document.querySelector('h1').style.visibility = 'hidden';
 // set background color of button to yellow
 document.querySelector('button').style.backgroundColor = 'yellow';
 ```
+
+# 119
+
+- styles should be placed in CSS files and HTML in html files (separation is the key)
+- Add this to the style.css
+
+```css
+.invisible {
+  visibility: hidden;
+}
+.huge {
+  font-size: 10rem;
+}
+```
+
+```js
+// Return a class list (all class attributes of an HTML element)
+document.querySelector('li').classList;
+
+// add a class value to an HTML attribute (button should dissapear)
+document.querySelector('button').classList.add('invisible');
+document.querySelector('button').classList;
+
+// add class .huge to h1 element (style.css includes already this class)
+document.querySelector('h1').classList.add('huge');
+```
