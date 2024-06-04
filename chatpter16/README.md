@@ -176,3 +176,18 @@ document.querySelector('button').classList;
 // add class .huge to h1 element (style.css includes already this class)
 document.querySelector('h1').classList.add('huge');
 ```
+
+# 120
+
+- innerHTML vs textContent
+
+```js
+// return inner HTML of the first li
+document.querySelector('ul li');
+
+// target h1 and add BYE between em tags
+document.querySelector('h1').innerHTML = '<em>BYE</em>';
+
+// return ALL text within the unordered list
+document.querySelector('ul').innerText;
+```
